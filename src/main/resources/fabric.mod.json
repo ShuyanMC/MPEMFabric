@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "mpem",
+  "version": "${version}",
+  "name": "Mpem",
+  "description": "MPEM Mod Forge To Fabric",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "accessWidener": "mpem.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.shuyanmc.mpem.client.MpemModFabricClient"
+    ],
+    "main": [
+      "net.shuyanmc.mpem.Mpem"
+    ]
+  },
+  "mixins": [
+    "mpem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "forgeconfigapiport": "*"
+  }
+}

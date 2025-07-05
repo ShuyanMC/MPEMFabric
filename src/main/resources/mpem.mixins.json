@@ -1,0 +1,45 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.shuyanmc.mpem.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BucketMixin",
+    "IInventoryMixin",
+    "ItemProMixin",
+    "MilkBucketMixin",
+    "NetworkHandlerMixin",
+    "PacketByteBufMixin",
+    "SlotMixin"
+  ],
+  "server": [
+    "DFUKILLER",
+    "EntityTypeMixin",
+    "InventoryMixin",
+    "ItemEntityMixin",
+    "ItemStackMixin",
+    "LevelMixin",
+    "MixinBoat",
+    "MixinServerLevel"
+  ],
+  "client": [
+    "DFUKILLER",
+    "EntityRendererMixin",
+    "EntityTypeMixin",
+    "InventoryMixin",
+    "ItemEntityMixin",
+    "ItemStackMixin",
+    "LevelMixin",
+    "mcmixinx",
+    "MixinBlockUpdatePacket",
+    "MixinBoat",
+    "ResourceOverlayMixin",
+    "uimixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
